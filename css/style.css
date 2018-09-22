@@ -1,0 +1,486 @@
+/*------------------------------------------------------
+RESETEO DE ESTILOS
+------------------------------------------------------*/
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+	overflow-x: hidden;
+}
+
+p {
+font-family: 'Quicksand', sans-serif;
+font-size: 1em;
+color: darkgray;
+}
+/*------------------------------------------------------
+ESTILOS GENERALES
+------------------------------------------------------*/
+
+.hero {
+
+	margin: 0px;
+  background:black url("../img/casaa1.JPG")no-repeat center / cover fixed;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-attachment: fixed;
+	z-index: 99;
+	position: relative;					/* IMPORTANTE */
+
+}
+
+.hero::before {
+				content: '';
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: #578ab4;
+				background-image: linear-gradient(135deg, #86cca8 0%, #353a37 100%);
+				opacity: .6;
+			}
+
+	.contenido {
+							position: relative;					/* IMPORTANTE */
+							text-align: center;
+							letter-spacing: 2px;
+						}
+
+h1 {
+color: white;
+padding-top:40vh;
+padding-bottom: 5vh;
+padding-left: 10vw;
+padding-right: 10vw;
+z-index: 155;
+  position: relative;					/* IMPORTANTE */
+  text-align: center;
+margin-top: 0px;
+font-family: 'Julius Sans One', sans-serif;
+font-size: 25px;
+
+}
+
+
+
+
+
+
+
+
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
+
+
+@media all and (min-width: 768px) {
+
+h1 {
+font-size: 55px;
+}
+
+
+}
+
+@media all and (min-width: 1200px) {
+
+ }
+
+
+ /*------------------------------------------------------
+ ICONO DIBUJABLE
+ ------------------------------------------------------*/
+ h3 {
+ font-family: 'Pacifico', cursive;
+ font-size: 20px;
+color:#2f3030;
+text-align: center;
+ }
+
+ .icono svg{
+     width:90%;
+ }
+
+ .icono svg * {
+     stroke:#86cca8;
+     stroke-width:3;
+     fill:none;
+ }
+
+.seccion_icono {
+display: flex;
+justify-content: center;
+padding: 10vw;
+}
+
+.icono {
+justify-content: center;
+}
+
+#iconocasa {
+justify-content: center;
+padding-left: 50px;
+padding-top: 20px;
+}
+
+@media all and (min-width: 768px) {
+
+	h3 {
+	font-family: 'Pacifico', cursive;
+	font-size: 35px;
+letter-spacing: 2px;
+
+
+
+	}
+
+	.icono svg{
+			width:90%;
+	}
+
+	#iconocasa {
+	justify-content: center;
+	padding-left: 50px;
+	padding-top: 30px;
+	}
+
+	.seccion_icono {
+	display: flex;
+	justify-content: center;
+	padding: 5vw;
+	}
+}
+
+@media all and (min-width: 1200px) {
+
+	h3 {
+	font-family: 'Pacifico', cursive;
+	font-size: 45px;
+	}
+ }
+
+ /*------------------------------------------------------
+ ESTILOS PRESTACIONES
+ ------------------------------------------------------*/
+
+.prestaciones {
+
+	margin: 0px;
+	background:black url("../img/pared.jpg")no-repeat center / cover fixed;
+	width: 100vw;
+height: auto;
+	text-align: center;
+	background-attachment: fixed;
+	z-index: 99;
+	position: relative;
+filter: brightness(0.8);
+}
+
+.prestaciones p {
+color:white;
+}
+.iconitos {
+padding: 20px;
+margin-top: 20px;
+margin-bottom: 20px;
+font-size: 2em;
+color: #fff;
+z-index: 99;
+display: block;
+}
+
+@media all and (min-width: 768px) {
+.iconitos {
+display: inline-block;
+padding: 30px;
+margin-top: 20px;
+margin-bottom: 20px;
+font-size: 3em;
+}
+}
+
+
+.textoicono {
+display: block;
+}
+
+@media all and (min-width: 768px) {
+	.textoicono {
+	display:inline-block;
+width: 200px;
+	}
+
+}
+
+/*------------------------------------------------------
+ESTILOS CARROUSEL
+------------------------------------------------------*/
+#fotosautomaticas {
+      padding: 100px 50px 0 0;
+}
+
+#fotosautomaticas img {
+
+    filter: grayscale(20%) ;
+    transform: scale(.95);
+    transition: all .5s;
+    opacity: .8;
+}
+
+#fotosautomaticas img:hover {
+
+    filter: grayscale(0);
+    transform: scale(1);
+    opacity:1;
+
+}
+
+/*------------------------------------------------------
+ESTILOS LLAVES
+------------------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+	.fotollaves {
+	display: none;
+	}
+}
+
+
+
+
+
+
+
+@media all and (min-width: 768px) {
+
+.llaves {
+margin-top: 7vw;
+margin-bottom: 3vw;
+margin-left: 5vw;
+margin-right: 5vw;
+display: flex;
+justify-content: space-around;
+}
+
+.fotollaves {
+filter: grayscale(1);
+	height: auto;
+	width: auto;
+	max-width: 400px;
+	max-height: 250px;
+	padding: 35px;
+
+}
+}
+.parrafollaves {
+padding: 15px;
+font-size: 1.2em;
+margin: 15px;
+color:#2f3030;
+}
+
+.h4llaves {
+
+  text-align: center;
+margin-top: 0px;
+ font-family: 'Pacifico', cursive;
+font-size: 38px;
+color:#86cca8;
+margin: 30px;
+
+}
+
+.spanllaves {
+color:#86cca8;
+}
+
+
+
+/*------------------------------------------------------
+ESTILOS CIELO
+------------------------------------------------------*/
+.cielo {
+
+	margin: 0px;
+  background:black url("../img/cielo.jpg")no-repeat center / cover fixed;
+  height: 50vh;
+  width: 100vw;
+  text-align: center;
+  background-attachment: fixed;
+	z-index: 99;
+	position: relative;
+filter: grayscale(0.5);
+
+}
+
+.cielo::before {
+				content: '';
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: #578ab4;
+				background-image: linear-gradient(135deg, #86cca8 0%, #353a37 100%);
+				opacity: .6;
+			}
+
+.textocielo {
+	color: white;
+	padding-top:20vh;
+	padding-bottom: 20vh;
+padding-left: 10vw;
+padding-right: 10vw;
+	z-index: 155;
+	  position: relative;					/* IMPORTANTE */
+	  text-align: center;
+	margin-top: 0px;
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 20px;
+}
+
+@media all and (min-width: 768px) {
+
+.textocielo {
+font-size: 40px;
+padding-left: 10vw;
+padding-right: 10vw;
+}
+}
+
+
+/*------------------------------------------------------
+ESTILOS MAPA
+------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+.mapa {
+display: flex;
+flex-wrap: wrap;
+padding: 10px;
+margin: 10px;
+
+}
+
+.textomapa {
+font-size: 1em;
+color:#2f3030;
+padding: 3px;
+}
+
+
+}
+
+@media all and (min-width: 768px){
+.mapa {
+display: flex;
+justify-content: space-between;
+margin: 20vh;
+padding: 20px;
+}
+
+.textomapa {
+
+	font-size: 1.2em;
+	margin: 15px;
+	color:#2f3030;
+}
+}
+
+/*------------------------------------------------------
+ESTILOS CONTACTO
+------------------------------------------------------*/
+.contacto {
+	margin: 0px;
+  background:black url("../img/cabina.jpg")no-repeat top/ cover fixed;
+  height: 50vh;
+  width: 100vw;
+  text-align: center;
+  background-attachment: fixed;
+	z-index: 99;
+	position: relative;
+filter: grayscale(0.5);
+}
+
+.contacto::before {
+				content: '';
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background-color: #578ab4;
+				background-image: linear-gradient(135deg, #86cca8 0%, #353a37 100%);
+				opacity: .6;
+			}
+
+.blanco {
+color:white;
+padding: 15px;
+margin: 20px;
+text-decoration: none;
+display: block;
+}
